@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+/* body{
+    background-color: #0d1117;
+    color:white;
+} */
+
+.searchfield
+{
+  border-radius:4px;
+  width:19rem;
+  background-Color:white;
+  color:black !important;
+  margin-Left:1.5rem;
+  margin-Top:0.2rem;
+  padding-left:1rem;
+}
+.Input-field
+{
+    margin-left: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homepage
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:100vh;
+    padding:6rem;
+   
+    /* background:no-repeat; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homePageContainer
+{
+    background-image: url('https://github.githubassets.com/images/modules/site/home/globe.jpg');
+    background-size:cover;
+}
+.repo-container
+{
+    min-height:100vh;
+}
+.profile
+{
+    display: flex;
+    gap:2rem;
+    margin-top: 2rem;
+    padding:2rem;
+    width:35rem;
+    background-color:#040d21 !important;
+    /* color: black !important; */
+    padding-left:5rem;
+
+}
+.profile-pic
+{
+    height:10rem;
+    width: 10rem;
+    margin-top:1.3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#githubIcon
+{
+    fill:white;
+    text-Align:left;
+    font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+#profileProgress
+{
+margin-Top:10rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#repoProgress
+{
+margin-Left:40rem; 
+margin-Top:15rem;
+}
+
+
+
+
+.profile {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#textfield
+{
+    width:28rem;
+    color:white;
+}   
+.repoPage
+{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    gap:1rem;
+    padding:3rem;
+}
+#repo
+{
+    
+    background-color:#192133;
+    width:40rem;
+    padding:2rem;
+  
+}
+
+.icons
+{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.content
+{
+    padding-top:2rem;
+}
+
+a
+{
+    color:#58a6da;
+    text-decoration:none;
+}
+#backRepoButton
+{
+    margin-left:51rem;
+}
+
+#floaticon
+{
+  left:63rem;
+  margin-bottom: 1rem;
+  margin-top:-25rem;
+}
+
+#pagination
+{
+    display: flex;
+    justify-content:center !important;
+    padding-bottom:2rem;
 }
