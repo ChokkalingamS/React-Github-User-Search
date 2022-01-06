@@ -10,7 +10,6 @@ import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
 import { ThemeProvider,createTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import { InputGroup } from 'react-bootstrap';
 import CircularProgress from '@mui/material/CircularProgress';
 import SearchIcon from '@mui/icons-material/Search';
 import { InputAdornment} from '@mui/material';
@@ -52,7 +51,6 @@ export const context=createContext('')
 function Github()
 {
   let history=useHistory()
-  // const [userData,setUserData]=useState((localStorage.getItem('name')?localStorage.getItem('name'):''))
   const [userData,setUserData]=useState('')
   const [name,setName]=useState('')
   localStorage.setItem('name',name)
@@ -109,7 +107,7 @@ function Homepage()
       InputProps={{
         endAdornment: (<InputAdornment position="start">
           <Tooltip title='Search'>
-            <IconButton onClick={() =>(name)&&getProfile(name)} fontSize='large'>
+            <IconButton onClick={() =>(name)&&getProfile(name.split(' ').join(''))} fontSize='large'>
             <SearchIcon/>
             </IconButton>
           </Tooltip>

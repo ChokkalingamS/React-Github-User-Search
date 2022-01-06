@@ -57,7 +57,6 @@ export function Repository() {
 //   Search Repository
   const filterData = search => {
     let result = repo.filter(x => { return x.name === search.split(' ').join('-'); });
-    console.log(result);
     setFilterRepo((result.length) ? result : []);
   };
 
