@@ -1,0 +1,63 @@
+ /* Device : Tab */
+@media screen and (min-width:601px ) and (max-width:900px)
+{
+
+#repoProgress
+{
+margin-Left:22rem; 
+margin-Top:15rem;
+}
+}
+
+
+/* Device : Phone */
+@media screen and (min-width:300px ) and (max-width:600px)
+{
+.profile
+{
+   width:21rem;  
+   padding-left:1rem; 
+}
+.profile-pic
+{
+    height:5rem;
+    width: 5rem;
+}
+#profileProgress
+{
+    margin-Top:10rem;
+}
+#textfield
+{
+  width:16rem;
+}
+#showrep
+{
+    width:8rem
+}
+
+#repo
+{
+    width:19rem;
+}
+#backRepoButton
+{
+    margin-left:9rem;
+}
+
+.searchfield
+{
+  width:15rem;
+}
+#floaticon
+{
+  left:13rem;
+  margin-bottom: 1rem;
+  margin-top:-2rem;
+}
+#repoProgress
+{
+margin-Left:11.5rem; 
+margin-Top:15rem;
+}
+}
