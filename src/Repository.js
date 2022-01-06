@@ -96,7 +96,7 @@ function Repo({ repo })
     {repo.map(({ full_name, html_url, created_at, id, updated_at, language, open_issues, stargazers_count }) => {
       return (
         <Card key={id} id='repo'>
-          <a href={html_url} target='_blank'>{full_name}</a><br /><br />
+          <a href={html_url} target='_blank'><b>{full_name}</b></a><br /><br />
             {/* Repository Info */}
           <Moreinfo created_at={created_at} updated_at={updated_at} convert={convert} open_issues={open_issues}
             star={<Badge badgeContent={stargazers_count} color="primary" showZero>
