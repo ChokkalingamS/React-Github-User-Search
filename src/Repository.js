@@ -24,10 +24,10 @@ import './Responsive.css';
 export function Repository() {
   const { name } = useContext(context);
   const [repo, setRepo] = useState([]);
-  const [loading, setLoading] = useState('');
+  const [ ,setLoading] = useState('');
   const [show, setShow] = useState('hide');
   const [currentPage, setCurrentPage] = useState(1);
-  const [reposPerPage, setReposPerPage] = useState(10);
+  const [reposPerPage,] = useState(10);
   const [err, setErr] = useState(1);
   const [filterRepo, setFilterRepo] = useState([]);
 
@@ -136,7 +136,7 @@ function Page({ totalRepo, paginate, reposPerPage }) {
   return (
     <div id='pagination'>
       <Stack spacing={2} id='paginate'>
-        <Pagination count={Math.ceil(totalRepo / reposPerPage)} size='Large' onChange={(e, value) => paginate(value)} size="large">
+        <Pagination count={Math.ceil(totalRepo / reposPerPage)} size='Large' onChange={(e, value) => paginate(value)} >
         </Pagination>
       </Stack>
     </div>);
