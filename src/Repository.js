@@ -95,7 +95,7 @@ function Repo({ repo })
     {repo.map(({ full_name, html_url, created_at, id, updated_at, language, open_issues, stargazers_count }) => {
       return (
         <Card key={id} id='repo'>
-          <a href={html_url} target='_blank'><b>{full_name}</b></a><br /><br />
+          <a href={html_url} rel="noreferrer" target='_blank'><b>{full_name}</b></a><br /><br />
             {/* Repository Info */}
           <Moreinfo created_at={created_at} updated_at={updated_at} convert={convert} open_issues={open_issues}
             star={<Badge badgeContent={stargazers_count} color="primary" showZero>
@@ -151,7 +151,7 @@ function Appbar({ filterData }) {
       <AppBar position="static">
         <Toolbar>
           <Tooltip title={name}>
-            <IconButton><a href={html_url} target='_blank'><GitHubIcon style={{ fill: 'white', height: '2.3rem', width: '2.3rem' }} /></a></IconButton>
+            <IconButton><a href={html_url} rel="noreferrer" target='_blank'><GitHubIcon style={{ fill: 'white', height: '2.3rem', width: '2.3rem' }} /></a></IconButton>
           </Tooltip>
           <div>
               {/* Search Bar */}

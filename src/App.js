@@ -98,7 +98,7 @@ function Homepage()
 
   return(<div className='homePageContainer'>
     <Tooltip title='GITHUB'>
-     <IconButton><a href='https://github.com/' target='_blank'><GitHubIcon id='githubIcon'/></a></IconButton> 
+     <IconButton><a href='https://github.com/' rel="noreferrer" target='_blank'><GitHubIcon id='githubIcon'/></a></IconButton> 
      </Tooltip>
     <div className='homepage'>
     <div className='Input-field' style={styles}>
