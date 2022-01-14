@@ -92,7 +92,7 @@ function Homepage()
   
   
   // To avoid homepage data deletion 
-  useEffect(()=>
+  useEffect(()=>// eslint-disable-next-line
   (storedName)&&getProfile(storedName),[]
   )
 
