@@ -52,7 +52,7 @@ export function Repository() {
       .then(() => setShow('show'))
       .then(() => setLoading(''));
 
-  }, []);
+  }, [name]);
 
 //   Search Repository
   const filterData = search => {
@@ -172,22 +172,22 @@ function Appbar({ filterData }) {
 function Icon({ language }) {
   switch (language) {
     case 'HTML':
-      return <i class="fab fa-html5" style={{ color: '#F06529', fontSize: '1.5rem' }}></i>;
+      return <i className="fab fa-html5" style={{ color: '#F06529', fontSize: '1.5rem' }}></i>;
 
     case 'CSS':
-      return <i class="fab fa-css3-alt" style={{ color: 'skyblue', fontSize: '1.5rem' }}></i>;
+      return <i className="fab fa-css3-alt" style={{ color: 'skyblue', fontSize: '1.5rem' }}></i>;
 
     case 'JavaScript':
-      return <i class="fab fa-js" style={{ color: 'orange', fontSize: '1.5rem' }}></i>;
+      return <i className="fab fa-js" style={{ color: 'orange', fontSize: '1.5rem' }}></i>;
 
     case 'Python':
-      return <i class="fab fa-python" style={{ color: 'yellow', fontSize: '1.5rem' }}></i>;
+      return <i className="fab fa-python" style={{ color: 'yellow', fontSize: '1.5rem' }}></i>;
 
     case 'C':
-      return <i class="fab fa-cuttlefish" style={{ color: 'violet', fontSize: '1.5rem' }}></i>;
+      return <i className="fab fa-cuttlefish" style={{ color: 'violet', fontSize: '1.5rem' }}></i>;
 
     case 'Java':
-      return <i class="fab fa-java" style={{ color: 'brown', fontSize: '1.5rem' }}></i>;
+      return <i className="fab fa-java" style={{ color: 'brown', fontSize: '1.5rem' }}></i>;
 
 
     default:

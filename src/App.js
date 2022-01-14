@@ -78,10 +78,6 @@ function Homepage()
   let [styles,setStyles]=useState({marginTop:'2rem'})
   
   
-  // To avoid homepage data deletion 
-  useEffect(()=>
-  (storedName)&&getProfile(storedName),[]
-  )
 
   // Get User Data 
   const getProfile=(name)=>{
@@ -95,6 +91,10 @@ function Homepage()
   }
   
   
+  // To avoid homepage data deletion 
+  useEffect(()=>
+  (storedName)&&getProfile(storedName),[]
+  )
 
   return(<div className='homePageContainer'>
     <Tooltip title='GITHUB'>
